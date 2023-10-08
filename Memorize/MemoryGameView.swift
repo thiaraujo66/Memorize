@@ -14,23 +14,28 @@ struct MemoryGameView: View {
         VStack{
             ScrollView{
                 cards
+                    .animation(.default, value: EMemoryGame.cards
+                    )
             }
-            Button("Shuffle") {
+            Button(action: {
                 EMemoryGame.shuffle()
-            }
+            }, label: {
+                Image(systemName: "shuffle")
+            })
+            .font(.system(size: 25))
         }
         .padding()
     }
     
     var cards: some View{
         LazyVGrid(columns: [GridItem(.adaptive(minimum: 85), spacing: 0)], spacing: 0) {
-            ForEach(EMemoryGame.cards.indices, id: \.self) { index in
-                CardView(EMemoryGame.cards[index])
+            ForEach(EMemoryGame.cards) { card in
+                CardView(card)
                     .aspectRatio(2/3, contentMode: .fit)
                     .padding(4)
             }
         }
-        .foregroundColor(.orange)   
+        .foregroundColor(.orange)
     }
 }
 
