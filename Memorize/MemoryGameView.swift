@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MemoryGameView: View {
     @ObservedObject var EMemoryGame: EmojiMemoryGame
-        
+    
     var body: some View {
         VStack{
             ScrollView{
@@ -17,14 +17,15 @@ struct MemoryGameView: View {
                     .animation(.default, value: EMemoryGame.cards
                     )
             }
-            Button(action: {
-                EMemoryGame.shuffle()
-            }, label: {
-                Image(systemName: "shuffle")
-            })
-            .font(.system(size: 25))
+            HStack {
+                Spacer()
+                shuffle
+            }
         }
         .padding()
+        .toolbar() {
+            newGame
+        }
     }
     
     var cards: some View{
@@ -39,6 +40,23 @@ struct MemoryGameView: View {
             }
         }
         .foregroundColor(.orange)
+    }
+    
+    var shuffle: some View {
+        Button(action: {
+            EMemoryGame.shuffle()
+        }, label: {
+            Image(systemName: "shuffle")
+        })
+        .font(.system(size: 25))
+    }
+    
+    var newGame: some View{
+        Button(action: {
+            EMemoryGame.newGame()
+        }, label: {
+            Text("New Game")
+        })
     }
 }
 
