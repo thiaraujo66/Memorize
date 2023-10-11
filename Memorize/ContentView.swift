@@ -25,7 +25,7 @@ struct ContentView: View {
             }
             .padding(.horizontal)
             List {
-                NavigationLink(destination: MemoryGameView(EMemoryGame: EmojiMemoryGame())) {
+                NavigationLink(destination: MemoryGameView(EMemoryGame: EmojiMemoryGame(title: "Halloween", theme: .orange, emojis: ["👻", "🎃", "🕷️", "😈", "🕸️", "💀", "🧙", "🙀", "👹", "😱", "☠️", "🍭"], numberOfPairs: 12))) {
                     VStack {
                         HStack{
                             Text("Halloween")

@@ -131,6 +131,6 @@ struct CardView: View {
 
 struct MemoryGameView_Previews: PreviewProvider {
     static var previews: some View {
-        MemoryGameView(EMemoryGame: EmojiMemoryGame())
+        MemoryGameView(EMemoryGame: EmojiMemoryGame(title: "Halloween", theme: .orange, emojis: ["👻", "🎃", "🕷️", "😈", "🕸️", "💀", "🧙", "🙀", "👹", "😱", "☠️", "🍭"], numberOfPairs: 12))
     }
 }

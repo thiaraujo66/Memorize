@@ -11,8 +11,14 @@ struct MemoryGame<CardContent> where CardContent: Equatable {
     
     private(set) var cards: Array<Card>
     
-    init(numberOfPairsOfCards: Int, cardContentFactory: (Int) -> CardContent){
+    var title: String
+    var theme: Theme
+    
+    init(numberOfPairsOfCards: Int, title: String, theme: Theme, cardContentFactory: (Int) -> CardContent){
         cards = []
+        self.title = title
+        self.theme = theme
+        
         // add numberOfPairsOfCards x 2 cards
         
         for pairIndex in 0..<max(2, numberOfPairsOfCards) {

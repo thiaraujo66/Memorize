@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA91A7ED2AD747C8007373D0 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA91A7EC2AD747C8007373D0 /* Theme.swift */; };
 		BAA2D5792ACB333600E121A4 /* MemorizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA2D5782ACB333600E121A4 /* MemorizeApp.swift */; };
 		BAA2D57B2ACB333600E121A4 /* MemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA2D57A2ACB333600E121A4 /* MemoryGameView.swift */; };
 		BAA2D57D2ACB333700E121A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA2D57C2ACB333700E121A4 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA91A7EC2AD747C8007373D0 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		BAA2D5752ACB333600E121A4 /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA2D5782ACB333600E121A4 /* MemorizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeApp.swift; sourceTree = "<group>"; };
 		BAA2D57A2ACB333600E121A4 /* MemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			children = (
 				BAB2731C2AD07DBA00C21A75 /* MemoryGame.swift */,
 				BAB2731E2AD082AD00C21A75 /* EmojiMemoryGame.swift */,
+				BA91A7EC2AD747C8007373D0 /* Theme.swift */,
 				BAA2D5782ACB333600E121A4 /* MemorizeApp.swift */,
 				BAA2D57A2ACB333600E121A4 /* MemoryGameView.swift */,
 				BAA406BD2AD6DFE9000A0577 /* ContentView.swift */,
@@ -149,6 +152,7 @@
 				BAA2D57B2ACB333600E121A4 /* MemoryGameView.swift in Sources */,
 				BAA406BE2AD6DFE9000A0577 /* ContentView.swift in Sources */,
 				BAA2D5792ACB333600E121A4 /* MemorizeApp.swift in Sources */,
+				BA91A7ED2AD747C8007373D0 /* Theme.swift in Sources */,
 				BAB2731D2AD07DBA00C21A75 /* MemoryGame.swift in Sources */,
 				BAB2731F2AD082AD00C21A75 /* EmojiMemoryGame.swift in Sources */,
 			);
