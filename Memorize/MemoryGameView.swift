@@ -39,7 +39,7 @@ struct MemoryGameView: View {
                     }
             }
         }
-        .foregroundColor(.orange)
+        .foregroundColor(EMemoryGame.theme.cardColor)
     }
     
     var shuffle: some View {

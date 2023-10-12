@@ -25,7 +25,7 @@ struct ContentView: View {
             }
             .padding(.horizontal)
             List {
-                NavigationLink(destination: MemoryGameView(EMemoryGame: EmojiMemoryGame(title: "Halloween", theme: .orange, emojis: ["👻", "🎃", "🕷️", "😈", "🕸️", "💀", "🧙", "🙀", "👹", "😱", "☠️", "🍭"], numberOfPairs: 12))) {
+                NavigationLink(destination: MemoryGameView(EMemoryGame: EmojiMemoryGame(title:"Halloween", theme: .orange, emojis: ["👻", "🎃", "🕷️", "😈", "🕸️", "💀", "🧙", "🙀", "👹", "😱", "☠️", "🍭"], numberOfPairs: 12))) {
                     VStack {
                         HStack{
                             Text("Halloween")
@@ -35,6 +35,19 @@ struct ContentView: View {
                             Spacer()
                         }
                         Text("All of 👻🎃🕷️😈🕸️💀🧙🙀👹😱☠️🍭")
+                            .font(.system(size: 15))
+                    }
+                }
+                NavigationLink(destination: MemoryGameView(EMemoryGame: EmojiMemoryGame(title: "Vehicles", theme: .red, emojis: ["✈️", "🚗", "🚌", "🏎️", "🚓", "🚑", "🚒", "🚜", "🚲", "🚁", "🚤", "🚄"], numberOfPairs: 12))) {
+                    VStack {
+                        HStack{
+                            Text("Vehicles")
+                                .font(.system(size: 25))
+                                .foregroundColor(.red)
+                                .bold()
+                            Spacer()
+                        }
+                        Text("All of ✈️🚗🚌🏎️🚓🚑🚒🚜🚲🚁🚤🚄")
                             .font(.system(size: 15))
                     }
                 }
